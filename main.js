@@ -26,9 +26,9 @@ async function api(nameurl = null) {
         }
     });
 
-    if (!response.ok) throw new Error('Error en la respuesta');
+    if (!res.ok) throw new Error('Error en la respuesta');
     
-    const data = await response.json();
+    const data = await res.json();
     console.log(data);
 
         // const data = await res.json();
